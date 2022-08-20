@@ -11,7 +11,7 @@ import {
 	List
 } from "react-native";
 
-let numbers = [1,2,3,4]			
+let numbers = [1]			
 
 
 const ListItems = () => {
@@ -62,7 +62,6 @@ const ListItems = () => {
 	return(
 		<>
 		<SafeAreaView >
-		<Text>{taskCount}</Text>
 		{numbers.map((numbers, task) => { return(
 			 <View key={numbers} style={styles.inputContainer}>
 								<TextInput
@@ -82,7 +81,7 @@ const ListItems = () => {
 		)})}
 				
 		</SafeAreaView>
-		<TouchableOpacity><Text style={{fontSize:30,backgroundColor: 'white'}}>+</Text></TouchableOpacity>
+		<TouchableOpacity><Text style={{fontSize:30}}>+</Text></TouchableOpacity>
 
 		</>
 
@@ -92,18 +91,18 @@ const ListItems = () => {
 
 const styles = StyleSheet.create({
 	button: {
-		color: "blue",
+		
 		flexDirection: "column",
 		alignItems: "center",
 		justifyContent: "center",
 		textAlign: "center",
 		height: 10,
-		marginLeft: "50%"
+		
 	},
 	inputContainer: {
 	
 		flex: 1,
-		marginTop: 50,
+		
 		flexDirection: "row",
 		height: 30,
 	},

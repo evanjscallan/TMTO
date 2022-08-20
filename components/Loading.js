@@ -62,17 +62,18 @@ Animated.timing(fadeAnim,
 	return(
 	<>
 
-	<Animated.View 
+
+		<SafeAreaView style={{ 
+			backgroundColor: "#0D0D0D", 
+		
+			overflow: 'hidden'}}>
+			<Animated.View 
 		style=
+
 		{{
+			
 			opacity: fadeAnim,
 		}}>
-		<SafeAreaView style={{ 
-			backgroundColor: "#46858C", 
-			height: windowHeight, 
-			width: windowWidth, 
-			overflow: 'hidden'}}>
-
 	 
 			<View style={styles.rowBox}>
 				<Animated.View style={{
@@ -158,8 +159,9 @@ Animated.timing(fadeAnim,
 					<Text style={styles.text}>O</Text>
 				</Animated.View>
 			</View>
+			</Animated.View>
 		</SafeAreaView>
-	</Animated.View>
+	
 	</>
 	)
 }

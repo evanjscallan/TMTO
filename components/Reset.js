@@ -9,6 +9,7 @@ import {
 	Button,
 	FlatList,
 	List,
+	Dimensions,
 } from "react-native";
 
 
